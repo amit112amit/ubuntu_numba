@@ -4,7 +4,8 @@ From: ubuntu:latest
 %post
     apt-get update
     apt-get install --no-install-recommends -y python3-numba \
-	python3-scipy python3-pandas python3-sympy python3-openpyxl
+	python3-scipy python3-pandas python3-sympy python3-openpyxl \
+	python3-matplotlib python3-h5py
     rm -rf /var/lib/apt/lists/*
 
 %test
